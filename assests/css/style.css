@@ -1,0 +1,1008 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    background: whitesmoke;
+}
+h1,h2,h3,h4,h5,h6,.row, ul, p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    display: inline-block;
+}
+
+.upper-menu{
+    position:relative;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+    background: whitesmoke;
+    
+}
+.upper-menu .logo-box,
+.upper-menu .menu,
+.upper-menu .btn-bx
+{
+position: relative;
+width: 100%;
+padding: 10px 20px;
+display: grid;
+align-content: center;
+justify-items: start;
+}
+.upper-menu .logo-box h4{
+    position: relative;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.upper-menu .logo-box h4 i{
+    display: none;
+}
+
+
+
+#menu-items{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+}
+.upper-menu .menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.upper-menu .menu ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 7px 16px;
+    text-decoration: none;
+    color: grey;
+    border-radius: 0px;
+    transition: 0.3s ease-in-out;
+}
+.upper-menu .menu ul li a:hover{
+    background: #222;
+    color: #fff;
+}
+.upper-menu .menu ul li a:active{
+    transform: scale(0.9);
+}
+
+.upper-menu .btn-bx{
+    justify-content: end;
+}
+.upper-menu .btn-bx button{
+    position: relative;
+    width: auto;
+    padding: 8px 20px;
+    border-radius: none;
+    background: #333;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #333;
+    transition: 0.2s ease-in-out;
+}
+.upper-menu .btn-bx button:hover{
+    border: 1px solid black;
+    background: none;
+    color: black;
+}
+
+
+
+/* upper-menu style end here */
+
+.content-bx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+    background: #444;
+    color: white;
+    display: grid;
+    align-content: center;
+}
+.content-bx .big-img,
+.content-bx .small-img
+{
+    position: relative;
+    width: 100%;
+    padding: 20px 20px;
+}
+.content-bx .big-img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: none;
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 0px 0px;
+    background-color: none;
+}
+.content-bx .big-img .carousel,
+.content-bx .big-img .carousel-inner,
+.content-bx .big-img .carousel-inner .carousel-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    
+}
+.content-bx .big-img .carousel-inner{
+    opacity: 0;
+    left: 0px;
+    transition: 1s;
+}
+.content-bx .big-img .carousel-inner .carousel-item{
+    transition: 0.5s ease-in-out;
+}
+.content-bx .big-img .carousel-inner .carousel-item img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-bx .big-img .text-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,00,0.3);
+    display: grid;
+    align-content: end;
+    justify-items: start;
+    padding: 30px 30px;
+}
+
+
+.content-bx .big-img h1{
+    position: relative;
+    width: 100%;
+    font-size: 2em;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 0px;
+    font-weight: 400;
+    text-transform: up;
+    text-align: left;
+}
+.content-bx .big-img h6{
+    position: relative;
+    width: fit-content;
+    background: greenyellow;
+    padding: 5px 8px;
+    color:black;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.content-bx .big-img a{
+    position: relative;
+    width: auto;
+    margin-top: 20px;
+    padding: 5px 0px;
+    background: none;
+    color:#fff;
+    text-decoration: none;
+    outline: none;
+    text-transform:capitalize;
+}
+.content-bx .big-img a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:white;
+}
+
+.content-bx .small-img{
+    height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-bx .small-img ul{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: space-between;
+    transition: 1s ease-in-out;
+    opacity: 0;
+    left: 100px;
+        
+}
+
+.content-bx .small-img ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+  
+} 
+
+.content-bx .small-img .card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: none;
+    background: none;
+    border-radius: 0;
+    padding: 0px;
+    cursor: pointer;
+}
+.content-bx .small-img .card .img-bx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.content-bx .small-img .card .img-bx img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:bottom;
+}
+.content-bx .small-img .card .text-bx{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    background: rgba(0,0,00,0.5);
+    padding: 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.content-bx .small-img .card:hover .text-bx{
+    opacity: 1;
+}
+.content-bx .small-img .card .text-bx h2{
+    position: relative;
+    width: auto;
+    font-size: 2em;
+    font-family: 'satisfy',sans-serif;
+    text-transform: unset;
+    font-weight: 300;
+    text-transform:capitalize;
+}
+.content-bx .small-img .card .text-bx h6{
+    position: relative;
+    width: fit-content;
+    background: greenyellow;
+    padding: 3px 5px;
+    color: black;
+    margin-bottom: 10px;
+} 
+
+
+/* Content-bx styling end here */
+
+
+.banner{
+    position: relative;
+    width: 100%;
+  
+}
+.banner .img-bx,
+.banner .text-bx
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+}
+.banner .img-bx{
+    opacity: 0;
+    left: -100px;
+    transition: 1s;
+}
+.banner .text-bx{
+    padding: 10px 20px;
+    opacity: 0;
+    transition: 1s;
+    left: 100px;
+}
+.banner .text-bx h2{
+    position: relative;
+    font-size: 3em;
+    font-weight: 600;
+    color: rgb(0, 206, 0);
+    font-family: 'poppins',sans-serif;
+    margin-bottom: 0px;
+}
+.banner .text-bx h5{
+    position: relative;
+    width: fit-content;
+    font-family: 'satisfy',sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: grey;
+}
+.banner .text-bx p{
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    font-family: 'raleway',sans-serif;
+    margin-bottom: 20px;
+}
+.banner .text-bx a{
+    position: relative;
+    display: inline-block;
+    padding: 0px 0px;
+    background: none;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    perspective: 100px;
+    outline: none;
+}
+.banner .text-bx a span{
+    position: relative;
+    width: 100%;
+    padding: 7px 15px;
+    background: rgb(0, 206, 0);
+    z-index: 1;
+}
+.banner .text-bx a i{
+    position: relative;
+    width:auto;
+    padding: 7px 7px;
+    display: grid;
+    align-content: center;
+    background: rgb(0, 105, 0);
+    transform: rotateY(90deg);
+    transform-origin: left;
+    transition: 0.3s ease-in;
+    z-index: 0;
+   
+}
+.banner .text-bx a:hover i{
+
+    transform: rotateY(0deg);
+    
+}
+/* Banner styling end here */
+
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.slider .carousel,
+.slider .carousel .carousel-inner,
+.slider .carousel .carousel-inner .carousel-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.slider .carousel .carousel-indicators li{
+    text-indent: 00;
+    height: auto;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 100%;
+}
+
+.slider .carousel .carousel-inner .carousel-item{
+    transition: 0.5s;
+}
+.slider .carousel .carousel-inner .carousel-item img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .carousel .carousel-inner .carousel-item .carousel-caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    margin: 0;
+    color: white;
+    background: rgba(0,0,00,0.6);
+    padding:50px 10px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+.slider .carousel .carousel-inner .carousel-item .carousel-caption h1{
+    position: relative;
+    width: 100%;
+    font-size: 10em;
+    font-weight: 700;
+    color: whitesmoke;
+    margin-top: -20px;
+}
+.slider .carousel .carousel-inner .carousel-item .carousel-caption h3{
+    position: relative;
+    width: 100%;
+    font-family: 'montserrat',sans-serif;
+    font-size: 1.6em;
+    color: white;
+    font-weight: 300;
+    
+}
+.slider .carousel .img-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    align-content: end;
+    justify-items: end;
+}
+.slider .carousel .img-box img{
+    position: relative;
+    width: auto;
+    height: 550px;
+    object-fit: contain;
+}
+/* slider styling end here */
+
+
+#package-con{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    background: #444;
+    color: rgb(199, 199, 199); 
+}
+#package-con h6{
+    position: relative;
+    width:100%;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'montserrat',sans-serif;
+    text-align: center;
+}
+#package-con h6::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 100%;
+    height: 1px;
+    background: white;
+    z-index: 0;
+    display: none;
+   
+}
+
+#package-con h6 span{
+    position: relative;
+    width: auto;
+    background: none;
+    padding: 0px 10px;
+    font-size: 1.2em;
+    letter-spacing: 5px;
+}
+
+.package-con{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    align-content: center;
+}
+.package-con .card-bx{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    padding: 10px 20px;
+}
+.package-con .card-bx .card{
+    position: relative;
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.package-con .card-bx .card h4{
+    position: relative;
+    width: 100%;
+    padding: 15px 15px;
+    font-weight: 400;
+    text-align: center;
+    background: whitesmoke;
+    font-family: 'satisfy',sans-serif;
+    border-radius: 20px 20px 0px 0px;
+    color: black;
+}
+.package-con .card-bx .card ul{
+    padding:0px 10px;
+    height:fit-content;
+    background: rgba(0,0,0,0.4);
+}
+
+.package-con .card-bx .card ul li{
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.package-con .card-bx .card ul p{
+    position: relative;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 1em;
+    font-family: 'raleway',sans-serif;
+    border-top: 1px solid lightgray;
+    margin-top: 5px;
+}
+.package-con .card-bx .card h5{
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'raleway',sans-serif;
+    background:#000;
+    color: #aaa;
+}
+.package-con .card-bx .card button{
+    position: absolute;
+    right: 0px;
+    top: 70%;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: grid;
+    align-content: center;
+    border: none;
+    border: 5px solid #333;
+    font-size: 1.2em;
+    transform: translate(0,-70%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.package-con .card-bx:hover .card button{
+    opacity: 1;
+    right: -20px;
+}
+
+.package-con .card-bx .card.active{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px rgba(0,0,00,0.5);
+}
+.package-con .card-bx .card ul li .success{
+    color: greenyellow;
+}
+.package-con .card-bx .card ul li .danger{
+    color: rgb(255, 147, 147);
+}
+
+/* Package con end here */
+
+#about-section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-content: center;
+    background: #444;
+    color: white;
+    padding: 0px 0px;
+}
+.about{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin-bottom: 0px;
+    background: #222;
+}
+
+.about .about-bx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px 30px;
+    display: grid;
+    align-content: center;
+    background: #222;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    top: -40px;
+}
+.about .about-bx h2{
+    position: relative;
+    width: 100%;
+    font-size: 3em;
+    font-weight: 200;
+    color: white;
+}
+.about .about-bx p{
+    position: relative;
+    width: 100%;
+    font-size: 1.4em;
+    font-family: 'raleway',sans-serif;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 200;
+}
+.about .about-bx a{
+    position: relative;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: grey;
+    background: none;
+    border: 1px solid grey;
+    padding: 7px 15px;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    border-radius: 100px;
+}
+.about .about-bx a:hover{
+    border-color: white;
+    color: white;
+}
+.about .slider-bx{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 20px;
+    background:#000;
+    display: grid;
+    align-content: center;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    top: 40px;
+}
+.about .slider-bx h3{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+}
+.about .slider-bx .carousel,
+.about .slider-bx .carousel .carousel-inner,
+.about .slider-bx .carousel .carousel-inner .carousel-item{
+    position: relative;
+    width: 100%;
+    padding: 0px 0px;
+}
+.about .slider-bx .carousel .carousel-inner .carousel-item{
+
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+.about .slider-bx .carousel .carousel-inner .carousel-item .card{
+    position: relative;
+    width:100%;
+    background:#222;
+    background-blend-mode: overlay;
+    padding: 0px;
+    border: none;
+    box-shadow:4px 4px 10px rgba(0,0,00,0.5);
+}
+.about .slider-bx .carousel .carousel-inner .carousel-item .card .text-bx{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+   
+}
+.about .slider-bx .carousel .carousel-inner .carousel-item .card i{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.about .slider-bx .carousel .carousel-inner .carousel-item .card p{
+    position: relative;
+    width: 100%;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+.about .slider-bx .carousel .carousel-inner .carousel-item .profile{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    background: #111;
+    padding: 10px 20px;
+}
+.about .slider-bx .carousel .carousel-inner .carousel-item .profile img{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+.about .slider-bx .carousel .carousel-inner .carousel-item .profile h5{
+   width: 100%;
+    font-size: 1.3em;
+    font-weight: 100;
+    padding: 0px 10px;
+    text-transform: capitalize;
+}
+
+
+.img-grid{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 0px;
+    background: #fff;
+}
+.img-grid h4{
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'montserrat',sans-serif;
+    text-transform: uppercase;
+    font-size: 1.em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.img-grid .photo-bx{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+}
+
+
+.img-grid .img-con{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+.img-grid .img-con img{
+    position: relative;
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(0,0,00,0.3);
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+.img-grid .img-con img:hover{
+    transform: scale(1.03);
+}
+
+
+/* img-grid end here */
+
+
+.footer{
+    position: relative;
+    width: 100%;
+    padding: 20px 20px;
+}
+.footer .down-text{
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    display: grid;
+    align-content: center;
+}
+.footer .down-text h4{
+    position: relative;
+    width: 100%;
+    font-family: 'montserrat',sans-serif;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.footer .down-text h4 b{
+    font-weight: 600;
+    color: #555;
+   
+}
+.footer .down-text p{
+    font-weight: 300;
+    font-size: 1.1em;
+    font-family: 'raleway',sans-serif;
+}
+.footer .menu-bar{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+}
+.footer .menu-bar ul li{
+    list-style: none;
+    padding: 10px;
+}
+.footer .menu-bar ul li a{
+    position: relative;
+    width: 100%;
+    display: block;
+    color: #555;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+.footer .menu-bar ul li a:hover{
+    color: #000;
+    transform: scale(1.05);
+}
+
+.footer .form-bx{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    align-content: center;
+}
+.footer .form-bx h3{
+    font-family: 'raleway',sans-serif;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #ff6b88;
+}
+.footer .form-bx input{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid #ff6b88;
+    background: none;
+    outline: none;
+}
+.footer .form-bx button{
+    position: relative;
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    background: #ff6b88;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    transition: 0.2s ease-in-out;
+    outline: none;
+}
+.footer .form-bx button:hover{
+    background: crimson;
+}
+.footer .form-bx button:active{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+/* for below 786px screen */
+@media(max-width:768px){
+
+    .upper-menu .logo-box h4 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .upper-menu .logo-box h4 i{
+        display: block;
+    }
+    
+    #menu-items{
+        border-radius: 5px;
+        background: white;
+    }
+    
+    
+    .upper-menu .menu ul li{
+        display: block;
+        width: 100%;
+    }
+    .active_menu{
+       display: none;
+       background: white;
+   }
+    .upper-menu .menu ul li a{
+        width: 100%;
+        border-radius: 0;
+    }
+    .upper-menu .btn-bx{
+        justify-content: center;
+    }
+    /* upper-con end here */
+
+   
+    .slider{
+        height: 300px;
+    }
+    .slider .carousel .carousel-inner .carousel-item .carousel-caption h1{
+        font-size: 2.5em;
+        margin-top: 0;
+    }
+    .slider .carousel .carousel-inner .carousel-item .carousel-caption h3{
+        font-size: 1em;
+    }
+    .slider .carousel .img-box{
+        display: none;
+    }
+    /* slider end here*/
+    
+    
+    
+    .content-bx .big-img .text-box{
+        padding:30px 10px;
+    }
+    .content-bx .big-img a::before{
+        display: none;
+    }
+    .content-bx .big-img a{
+        background: white;
+        color: black;
+        padding: 7px 15px;
+    }
+    .content-bx .text-box h1{
+        font-size: 2em;
+    }
+
+    .content-bx .small-img{
+        padding: 0px;
+    }
+    .content-bx .small-img .card{
+        margin-bottom: 10px;
+    }
+    .content-bx .small-img .card .text-bx{
+        display: grid;
+        opacity: 1;
+    }
+    /* content-bx end here */
+
+
+
+    .package-con{
+        height: 100%;
+    }
+    .package-con .card-bx .card.active{
+        transform: scale(1);
+    }
+
+    /* Package end here */
+
+    .about{
+        height: auto;
+    }
+    
+}

@@ -1,0 +1,25 @@
+
+*{
+    box-sizing: border-box;
+}
+.row{
+    margin: 0;
+}
+
+
+
+.left-to-right{
+    position: relative;
+    width: 100%;
+    left: -100px;
+     opacity: 0;
+     transition: 1s ease-in-out; 
+}
+
+.right-to-left{
+    position: relative;
+    width: 100%;
+    left: 100px;
+     opacity: 0;
+     transition: 1s ease-in-out; 
+}
